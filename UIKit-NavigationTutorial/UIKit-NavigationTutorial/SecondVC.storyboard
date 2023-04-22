@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="B7m-I7-7hX">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Y6W-OH-hqX">
     <device id="retina6_12" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
@@ -8,32 +8,64 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--second-->
-        <scene sceneID="a44-XS-WDH">
+        <!--SecondVC-->
+        <scene sceneID="s0d-6b-0kx">
             <objects>
-                <viewController storyboardIdentifier="SecondVC" useStoryboardIdentifierAsRestorationIdentifier="YES" id="B7m-I7-7hX" customClass="SecondVC" customModule="UIKit_NavigationTutorial" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="rRB-tj-FC8">
+                <viewController id="Y6W-OH-hqX" customClass="SecondVC" customModule="UIKit_NavigationTutorial" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1HE-bh-ueT">
-                                <rect key="frame" x="122" y="108" width="149" height="35"/>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QWu-qM-yQd">
+                                <rect key="frame" x="124" y="273" width="146" height="35"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="filled" title="storyboard push"/>
+                                <buttonConfiguration key="configuration" style="filled" title="첫번째로 돌아가기"/>
+                                <connections>
+                                    <segue destination="NCK-ND-2mM" kind="unwind" identifier="goBackToFirstVC" unwindAction="backToFirstVCWithUnwindSegue:" id="Hfz-ei-aZj"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YZb-fz-VXr">
+                                <rect key="frame" x="96" y="337" width="202" height="35"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="첫번째로 돌아가기-Segue"/>
+                                <connections>
+                                    <action selector="goBackToFirstVC:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="ekL-PA-a2U"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SCd-nB-XgD">
+                                <rect key="frame" x="139" y="195" width="117" height="35"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="세번째로 가기"/>
+                                <connections>
+                                    <action selector="goToThirdVC:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="khB-Rl-bpW"/>
+                                    <segue destination="W3d-1e-z1g" kind="show" identifier="navToThirdVC" id="ZeZ-dw-FUH"/>
+                                </connections>
                             </button>
                         </subviews>
-                        <viewLayoutGuide key="safeArea" id="9r3-ZD-b4z"/>
+                        <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                        <constraints>
-                            <constraint firstItem="1HE-bh-ueT" firstAttribute="top" secondItem="9r3-ZD-b4z" secondAttribute="top" constant="49" id="X50-Ta-y0D"/>
-                            <constraint firstItem="1HE-bh-ueT" firstAttribute="centerX" secondItem="9r3-ZD-b4z" secondAttribute="centerX" id="fyA-VN-cdO"/>
-                        </constraints>
                     </view>
-                    <navigationItem key="navigationItem" title="second" id="45P-3r-Dcd"/>
+                    <connections>
+                        <segue destination="NCK-ND-2mM" kind="unwind" unwindAction="backToFirstVCWithUnwindSegue:" id="b45-2D-cca"/>
+                    </connections>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="lQo-gK-CDD" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <exit id="NCK-ND-2mM" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
-            <point key="canvasLocation" x="1671" y="-25"/>
+            <point key="canvasLocation" x="54.198473282442748" y="-34.507042253521128"/>
+        </scene>
+        <!--ThirdVC-->
+        <scene sceneID="dit-Id-y8H">
+            <objects>
+                <viewControllerPlaceholder storyboardName="ThirdVC" id="W3d-1e-z1g" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="VfN-Bz-2I0"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="1IL-9a-5HW" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="607" y="-184"/>
         </scene>
     </scenes>
     <resources>

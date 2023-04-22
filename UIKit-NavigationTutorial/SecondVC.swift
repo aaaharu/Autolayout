@@ -15,7 +15,17 @@ class SecondVC: UIViewController {
         // Do any additional setup after loading the view.
     }
     
-    @IBAction func backToFirstVC(unwindSegue: UIStoryboardSegue) {
-        self.performSegue(withIdentifier: "backToFirstVC", sender: self)
+
+ 
+
+    
+    @IBAction func goToThirdVC(_ sender: UIButton) {
+        self.performSegue(withIdentifier: "navToThirdVC", sender: self)
     }
+
+    @IBAction func goBackToFirstVC(_ sender: UIButton) {
+        self.performSegue(withIdentifier: "goBackToFirstVC", sender: self)
+        
+    }
+    
 }

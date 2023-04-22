@@ -11,26 +11,35 @@
         <!--first-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController storyboardIdentifier="ViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="BYZ-38-t0r" customClass="ViewController" customModule="UIKit_NavigationTutorial" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="ViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="BYZ-38-t0r" customClass="FirstVC" customModule="UIKit_NavigationTutorial" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="zSS-4B-ubp">
-                                <rect key="frame" x="20" y="133" width="353" height="163"/>
+                                <rect key="frame" x="20" y="133" width="353" height="227.33333333333337"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fC0-vw-019">
                                         <rect key="frame" x="0.0" y="0.0" width="353" height="34.333333333333336"/>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="filled" title="MoveToSecond"/>
+                                        <connections>
+                                            <action selector="goToSecondVC:" destination="BYZ-38-t0r" eventType="touchUpInside" id="CSp-dE-2eT"/>
+                                            <segue destination="cvB-7V-8HY" kind="show" identifier="navToSecondVC" id="q84-Hh-UqZ"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bua-Yr-10B">
+                                        <rect key="frame" x="0.0" y="64.333333333333343" width="353" height="34.333333333333343"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="filled" title="MoveToThird"/>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WAj-2Z-Rvo">
-                                        <rect key="frame" x="0.0" y="64.333333333333343" width="353" height="34.333333333333343"/>
+                                        <rect key="frame" x="0.0" y="128.66666666666669" width="353" height="34.333333333333343"/>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="filled" title="MovetoDetail"/>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oDt-JK-3zL">
-                                        <rect key="frame" x="0.0" y="128.66666666666669" width="353" height="34.333333333333343"/>
+                                        <rect key="frame" x="0.0" y="193" width="353" height="34.333333333333343"/>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="filled" title="program push"/>
                                         <connections>
@@ -52,29 +61,22 @@
                     <connections>
                         <outlet property="NavToDetailBtn" destination="WAj-2Z-Rvo" id="oEt-zk-wgs"/>
                         <outlet property="navToSecondVCBtn" destination="fC0-vw-019" id="Y1G-Fu-TwM"/>
-                        <segue destination="WGG-n3-tZm" kind="show" identifier="NavToDetail" id="vTe-Qc-hdC"/>
-                        <segue destination="obz-3M-vWu" kind="show" identifier="navToSecondVC" id="ars-XS-aOX"/>
+                        <outlet property="navToThird" destination="bua-Yr-10B" id="xMM-si-dvE"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="831.29770992366412" y="-27.464788732394368"/>
         </scene>
-        <!--third-->
-        <scene sceneID="8PS-rE-lgh">
+        <!--SecondVC-->
+        <scene sceneID="z46-84-GWG">
             <objects>
-                <viewController id="dYv-Rg-pKo" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="7PU-7B-QJo">
-                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <viewLayoutGuide key="safeArea" id="N96-L7-eE7"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                    </view>
-                    <navigationItem key="navigationItem" title="third" id="0ax-Vd-zJp"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="0XS-FL-D1h" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <viewControllerPlaceholder storyboardName="SecondVC" id="cvB-7V-8HY" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="IxZ-jg-D6O"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="0mw-U7-BeY" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2437" y="-27"/>
+            <point key="canvasLocation" x="1492" y="-215"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="gks-oK-PXc">
@@ -93,26 +95,6 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="mte-d3-7GS" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-95.419847328244273" y="-27.464788732394368"/>
-        </scene>
-        <!--SecondVC-->
-        <scene sceneID="Q2e-kF-lrx">
-            <objects>
-                <viewControllerPlaceholder storyboardName="SecondVC" referencedIdentifier="SecondVC" id="obz-3M-vWu" sceneMemberID="viewController">
-                    <navigationItem key="navigationItem" id="sfC-P8-uQ4"/>
-                </viewControllerPlaceholder>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="mIe-Je-uf1" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="1703" y="69"/>
-        </scene>
-        <!--DetailVC-->
-        <scene sceneID="pFl-Gl-AuG">
-            <objects>
-                <viewControllerPlaceholder storyboardName="DetailVC" referencedIdentifier="DetailVC" id="WGG-n3-tZm" sceneMemberID="viewController">
-                    <navigationItem key="navigationItem" id="Dhw-eP-yF0"/>
-                </viewControllerPlaceholder>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="Mzj-sA-OSv" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="1573" y="420"/>
         </scene>
     </scenes>
     <resources>
