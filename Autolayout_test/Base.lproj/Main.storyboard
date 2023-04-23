@@ -1446,7 +1446,7 @@
                                                 <rect key="frame" x="127.99999999999999" y="0.0" width="131.66666666666663" height="76"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="5" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TaJ-5e-FQX">
-                                                        <rect key="frame" x="56.999999999999993" y="20" width="17.666666666666664" height="46"/>
+                                                        <rect key="frame" x="56.999999999999993" y="20" width="17.666666666666664" height="36"/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="30"/>
                                                         <nil key="textColor"/>
                                                         <nil key="highlightedColor"/>
@@ -1457,7 +1457,6 @@
                                                     <constraint firstItem="TaJ-5e-FQX" firstAttribute="centerX" secondItem="phd-tP-J6Y" secondAttribute="centerX" id="bCS-AF-a0f"/>
                                                     <constraint firstItem="TaJ-5e-FQX" firstAttribute="top" secondItem="phd-tP-J6Y" secondAttribute="top" constant="20" id="bdO-dq-D56"/>
                                                     <constraint firstItem="TaJ-5e-FQX" firstAttribute="leading" secondItem="phd-tP-J6Y" secondAttribute="leading" constant="57" id="e3K-F0-5CG"/>
-                                                    <constraint firstItem="TaJ-5e-FQX" firstAttribute="centerY" secondItem="phd-tP-J6Y" secondAttribute="centerY" constant="5" id="qMu-EZ-8fo"/>
                                                 </constraints>
                                             </view>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Qsk-nN-4gb">
@@ -1483,17 +1482,23 @@
                                             </view>
                                         </subviews>
                                         <constraints>
+                                            <constraint firstItem="59q-ZV-fFt" firstAttribute="top" secondItem="TaJ-5e-FQX" secondAttribute="top" id="42Z-Vc-Glc"/>
+                                            <constraint firstItem="59q-ZV-fFt" firstAttribute="bottom" secondItem="TaJ-5e-FQX" secondAttribute="bottom" id="cow-Es-0D2"/>
+                                            <constraint firstItem="TaJ-5e-FQX" firstAttribute="top" secondItem="98T-su-xCa" secondAttribute="top" id="iO7-wG-91v"/>
                                             <constraint firstItem="Qsk-nN-4gb" firstAttribute="leading" secondItem="iKK-bY-LA2" secondAttribute="leading" constant="259.66666666666674" id="kDU-fc-mCb"/>
                                             <constraint firstItem="phd-tP-J6Y" firstAttribute="leading" secondItem="iKK-bY-LA2" secondAttribute="leading" constant="128" id="kgV-ba-Rst"/>
+                                            <constraint firstItem="TaJ-5e-FQX" firstAttribute="bottom" secondItem="98T-su-xCa" secondAttribute="bottom" id="lze-ol-uPt"/>
                                         </constraints>
                                     </stackView>
                                 </subviews>
                                 <color key="backgroundColor" systemColor="systemGray6Color"/>
                                 <constraints>
+                                    <constraint firstItem="TaJ-5e-FQX" firstAttribute="leading" secondItem="0IY-sd-R7r" secondAttribute="leading" id="0Dl-UT-M1v"/>
                                     <constraint firstItem="sSr-9l-k5V" firstAttribute="leading" secondItem="SQd-5D-RX0" secondAttribute="leading" id="0yb-Tv-fYN"/>
                                     <constraint firstItem="iKK-bY-LA2" firstAttribute="leading" secondItem="sSr-9l-k5V" secondAttribute="leading" id="80v-5U-a99"/>
                                     <constraint firstAttribute="bottom" secondItem="iKK-bY-LA2" secondAttribute="bottom" constant="200" id="DOh-KJ-htC"/>
                                     <constraint firstItem="sSr-9l-k5V" firstAttribute="top" secondItem="SQd-5D-RX0" secondAttribute="top" id="E3h-TH-dEh"/>
+                                    <constraint firstItem="TaJ-5e-FQX" firstAttribute="trailing" secondItem="0IY-sd-R7r" secondAttribute="trailing" id="ZTE-Sm-fGw"/>
                                     <constraint firstItem="iKK-bY-LA2" firstAttribute="trailing" secondItem="sSr-9l-k5V" secondAttribute="trailing" id="aQf-F0-UVf"/>
                                     <constraint firstAttribute="trailing" secondItem="sSr-9l-k5V" secondAttribute="trailing" id="de7-p3-5hN"/>
                                     <constraint firstItem="iKK-bY-LA2" firstAttribute="top" secondItem="sSr-9l-k5V" secondAttribute="bottom" id="hd2-rG-ahT"/>
