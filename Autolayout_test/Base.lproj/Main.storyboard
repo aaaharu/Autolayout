@@ -850,13 +850,13 @@
                                         <rect key="frame" x="0.0" y="0.0" width="393" height="812"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="More" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ovn-ic-Erg">
-                                                <rect key="frame" x="31.000000000000004" y="52.999999999999993" width="51.333333333333343" height="27.666666666666664"/>
+                                                <rect key="frame" x="15.000000000000004" y="52.999999999999993" width="51.333333333333343" height="27.666666666666664"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="23"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <stackView opaque="NO" contentMode="scaleToFill" spacing="39" translatesAutoresizingMaskIntoConstraints="NO" id="lNd-cY-uFa">
-                                                <rect key="frame" x="31" y="98" width="342" height="58"/>
+                                                <rect key="frame" x="15" y="98" width="363" height="58"/>
                                                 <subviews>
                                                     <stackView opaque="NO" contentMode="scaleToFill" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="oyf-g8-QIv">
                                                         <rect key="frame" x="0.0" y="0.0" width="263.33333333333331" height="58"/>
@@ -890,14 +890,13 @@
                                                         </subviews>
                                                     </stackView>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4d1-yx-ANV">
-                                                        <rect key="frame" x="302.33333333333331" y="0.0" width="39.666666666666686" height="58"/>
+                                                        <rect key="frame" x="302.33333333333331" y="0.0" width="60.666666666666686" height="58"/>
                                                         <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <state key="normal" title="Button"/>
                                                         <buttonConfiguration key="configuration" style="plain" image="chevron.right" catalog="system"/>
                                                     </button>
                                                 </subviews>
                                                 <constraints>
-                                                    <constraint firstAttribute="width" secondItem="OlI-0m-Mt6" secondAttribute="width" multiplier="5.51613" id="0aZ-bM-ch1"/>
                                                     <constraint firstAttribute="height" secondItem="OlI-0m-Mt6" secondAttribute="height" id="9MW-n2-fKl"/>
                                                 </constraints>
                                             </stackView>
@@ -1223,7 +1222,8 @@
                                             <constraint firstItem="U8h-ye-HzU" firstAttribute="top" secondItem="lNd-cY-uFa" secondAttribute="bottom" constant="33" id="E7t-9Q-0Ja"/>
                                             <constraint firstItem="Ovn-ic-Erg" firstAttribute="top" secondItem="UPr-sg-ewa" secondAttribute="top" constant="53" id="FY0-9B-KYc"/>
                                             <constraint firstAttribute="trailing" secondItem="U8h-ye-HzU" secondAttribute="trailing" constant="15" id="QJG-H4-WjM"/>
-                                            <constraint firstItem="Ovn-ic-Erg" firstAttribute="leading" secondItem="UPr-sg-ewa" secondAttribute="leading" constant="31" id="dyS-Zi-LUv"/>
+                                            <constraint firstItem="Ovn-ic-Erg" firstAttribute="leading" secondItem="UPr-sg-ewa" secondAttribute="leading" constant="15" id="dyS-Zi-LUv"/>
+                                            <constraint firstAttribute="trailing" secondItem="lNd-cY-uFa" secondAttribute="trailing" constant="15" id="ioD-RM-Lja"/>
                                             <constraint firstAttribute="height" constant="812" id="rk2-fC-a9z"/>
                                             <constraint firstItem="lNd-cY-uFa" firstAttribute="top" secondItem="Ovn-ic-Erg" secondAttribute="bottom" constant="17.333333333333343" id="tPN-nY-HJh"/>
                                             <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="Ovn-ic-Erg" secondAttribute="trailing" constant="20" symbolic="YES" id="wjI-P9-ZMw"/>
