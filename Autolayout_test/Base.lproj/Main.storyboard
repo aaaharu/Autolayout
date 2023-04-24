@@ -848,8 +848,53 @@
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Iur-jq-Viz">
                                         <rect key="frame" x="0.0" y="0.0" width="393" height="812"/>
+                                        <subviews>
+                                            <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" axis="vertical" spacing="31" translatesAutoresizingMaskIntoConstraints="NO" id="bjr-Yh-plh">
+                                                <rect key="frame" x="20" y="37" width="353" height="115.33333333333331"/>
+                                                <subviews>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="236" translatesAutoresizingMaskIntoConstraints="NO" id="GyL-Cy-p1m">
+                                                        <rect key="frame" x="0.0" y="0.0" width="353" height="34.333333333333336"/>
+                                                        <subviews>
+                                                            <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" spacing="216" translatesAutoresizingMaskIntoConstraints="NO" id="5hR-j5-ngy">
+                                                                <rect key="frame" x="0.0" y="0.0" width="70" height="34.333333333333336"/>
+                                                                <subviews>
+                                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Contacts" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="12" translatesAutoresizingMaskIntoConstraints="NO" id="suy-Ps-wBV">
+                                                                        <rect key="frame" x="0.0" y="0.0" width="70" height="34.333333333333336"/>
+                                                                        <fontDescription key="fontDescription" type="system" pointSize="23"/>
+                                                                        <nil key="textColor"/>
+                                                                        <nil key="highlightedColor"/>
+                                                                    </label>
+                                                                </subviews>
+                                                            </stackView>
+                                                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="W5L-SL-hD7">
+                                                                <rect key="frame" x="306" y="0.0" width="47" height="34.333333333333336"/>
+                                                                <color key="tintColor" systemColor="labelColor"/>
+                                                                <state key="normal" title="Button"/>
+                                                                <buttonConfiguration key="configuration" style="plain" image="plus" catalog="system"/>
+                                                            </button>
+                                                        </subviews>
+                                                    </stackView>
+                                                    <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="YnR-lC-niJ">
+                                                        <rect key="frame" x="0.0" y="65.333333333333343" width="353" height="50"/>
+                                                        <subviews>
+                                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pNp-Zw-XAO">
+                                                                <rect key="frame" x="0.0" y="7" width="50" height="35"/>
+                                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                                <color key="tintColor" systemColor="labelColor"/>
+                                                                <state key="normal" title="Button"/>
+                                                                <buttonConfiguration key="configuration" style="plain" image="magnifyingglass" catalog="system"/>
+                                                            </button>
+                                                        </subviews>
+                                                        <color key="backgroundColor" systemColor="systemGray5Color"/>
+                                                    </view>
+                                                </subviews>
+                                            </stackView>
+                                        </subviews>
                                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                         <constraints>
+                                            <constraint firstItem="bjr-Yh-plh" firstAttribute="leading" secondItem="Iur-jq-Viz" secondAttribute="leading" constant="20" id="EDm-Ly-rVn"/>
+                                            <constraint firstItem="bjr-Yh-plh" firstAttribute="top" secondItem="Iur-jq-Viz" secondAttribute="top" constant="20" id="M8o-T7-4S4"/>
+                                            <constraint firstAttribute="trailing" secondItem="bjr-Yh-plh" secondAttribute="trailing" constant="20" id="TvD-zF-VKf"/>
                                             <constraint firstAttribute="height" constant="812" id="rjj-OJ-4fH"/>
                                         </constraints>
                                     </view>
@@ -2017,6 +2062,8 @@
     <resources>
         <image name="chevron.right" catalog="system" width="97" height="128"/>
         <image name="delete.left" catalog="system" width="128" height="102"/>
+        <image name="magnifyingglass" catalog="system" width="128" height="117"/>
+        <image name="plus" catalog="system" width="128" height="113"/>
         <image name="plus.circle" catalog="system" width="128" height="123"/>
         <image name="xmark" catalog="system" width="128" height="113"/>
         <namedColor name="AccentColor">
