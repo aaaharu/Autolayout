@@ -400,10 +400,12 @@
                                                             <constraint firstAttribute="height" constant="30" id="MEP-Lm-XfM"/>
                                                             <constraint firstAttribute="width" constant="30" id="cfz-Nk-7YP"/>
                                                         </constraints>
-                                                        <color key="tintColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <state key="normal" title="Button"/>
                                                         <buttonConfiguration key="configuration" style="gray">
                                                             <imageReference key="image" image="xmark.circle.fill" catalog="system" symbolScale="small"/>
+                                                            <color key="baseForegroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                            <color key="baseBackgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         </buttonConfiguration>
                                                     </button>
                                                 </subviews>
@@ -436,8 +438,8 @@
                                     </button>
                                 </subviews>
                             </stackView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8vI-mi-QMS">
-                                <rect key="frame" x="64" y="166" width="41.333333333333343" height="20.333333333333343"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="주식" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8vI-mi-QMS">
+                                <rect key="frame" x="78.333333333333329" y="166" width="29.666666666666671" height="20.333333333333343"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -458,8 +460,8 @@
                                     <constraint firstAttribute="height" constant="2" id="tz1-EX-uvk"/>
                                 </constraints>
                             </view>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="사용자" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HNz-ui-b4h">
-                                <rect key="frame" x="277" y="161" width="45" height="20.333333333333343"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="사용자" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HNz-ui-b4h">
+                                <rect key="frame" x="267.33333333333331" y="161" width="44.333333333333314" height="20.333333333333343"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -469,14 +471,15 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstAttribute="trailing" secondItem="E43-zO-QB7" secondAttribute="trailing" id="0fG-44-ocC"/>
-                            <constraint firstItem="8vI-mi-QMS" firstAttribute="leading" secondItem="7b8-no-JdL" secondAttribute="leading" constant="64" id="688-Sx-DFr"/>
                             <constraint firstItem="4b6-Wv-Vsl" firstAttribute="top" secondItem="8vI-mi-QMS" secondAttribute="bottom" constant="30" id="9sA-yC-V9g"/>
+                            <constraint firstItem="HNz-ui-b4h" firstAttribute="centerX" secondItem="E43-zO-QB7" secondAttribute="centerX" id="DOD-wx-CGk"/>
                             <constraint firstItem="Lao-aW-aPA" firstAttribute="top" secondItem="7b8-no-JdL" secondAttribute="top" constant="22" id="DkF-5z-bTB"/>
                             <constraint firstItem="8vI-mi-QMS" firstAttribute="top" secondItem="Lao-aW-aPA" secondAttribute="bottom" constant="35" id="JIX-qJ-wY4"/>
                             <constraint firstItem="4b6-Wv-Vsl" firstAttribute="leading" secondItem="7b8-no-JdL" secondAttribute="leading" id="R1h-Dp-oNv"/>
                             <constraint firstItem="E43-zO-QB7" firstAttribute="top" secondItem="HNz-ui-b4h" secondAttribute="bottom" constant="35" id="d90-F1-yn2"/>
                             <constraint firstItem="HNz-ui-b4h" firstAttribute="top" secondItem="Pgz-1r-Oye" secondAttribute="bottom" constant="30" id="f1b-op-0Cb"/>
                             <constraint firstItem="E43-zO-QB7" firstAttribute="leading" secondItem="4b6-Wv-Vsl" secondAttribute="trailing" id="f3Y-1I-uQY"/>
+                            <constraint firstItem="8vI-mi-QMS" firstAttribute="centerX" secondItem="4b6-Wv-Vsl" secondAttribute="centerX" id="qRI-Wu-k7w"/>
                             <constraint firstItem="Lao-aW-aPA" firstAttribute="centerX" secondItem="7b8-no-JdL" secondAttribute="centerX" id="yny-sf-hbd"/>
                         </constraints>
                     </view>
