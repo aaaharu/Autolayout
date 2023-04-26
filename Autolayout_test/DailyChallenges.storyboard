@@ -379,30 +379,67 @@
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Pgz-1r-Oye">
-                                <rect key="frame" x="16" y="81" width="297" height="65"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Pgz-1r-Oye">
+                                <rect key="frame" x="16" y="81" width="300" height="50"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="삼성전자" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QyT-ti-sQk">
-                                        <rect key="frame" x="44" y="22" width="59" height="21"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                        <nil key="textColor"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Nw0-Hi-omD">
-                                        <rect key="frame" x="203" y="15" width="41" height="35"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <color key="tintColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        <state key="normal" title="Button"/>
-                                        <buttonConfiguration key="configuration" style="gray" image="xmark.circle.fill" catalog="system"/>
-                                    </button>
+                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="100" translatesAutoresizingMaskIntoConstraints="NO" id="0wl-sM-scH">
+                                        <rect key="frame" x="10" y="10" width="280" height="30"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="삼성전자" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QyT-ti-sQk">
+                                                <rect key="frame" x="0.0" y="0.0" width="150" height="30"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Nw0-Hi-omD">
+                                                <rect key="frame" x="250" y="0.0" width="30" height="30"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="30" id="MEP-Lm-XfM"/>
+                                                    <constraint firstAttribute="width" constant="30" id="cfz-Nk-7YP"/>
+                                                </constraints>
+                                                <color key="tintColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="gray">
+                                                    <imageReference key="image" image="xmark.circle.fill" catalog="system" symbolScale="small"/>
+                                                </buttonConfiguration>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
                                 </subviews>
                                 <color key="backgroundColor" systemColor="systemGray6Color"/>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="0wl-sM-scH" secondAttribute="trailing" constant="10" id="1H1-yj-Dcc"/>
+                                    <constraint firstAttribute="bottom" secondItem="0wl-sM-scH" secondAttribute="bottom" constant="10" id="3oS-Oj-kS8"/>
+                                    <constraint firstItem="0wl-sM-scH" firstAttribute="top" secondItem="Pgz-1r-Oye" secondAttribute="top" constant="10" id="B68-7c-1AX"/>
+                                    <constraint firstAttribute="width" constant="300" id="BPH-pM-LJF"/>
+                                    <constraint firstAttribute="height" constant="50" id="Vm0-u7-bUf"/>
+                                    <constraint firstItem="0wl-sM-scH" firstAttribute="leading" secondItem="Pgz-1r-Oye" secondAttribute="leading" constant="10" id="sQp-5d-XXD"/>
+                                </constraints>
                             </view>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9IT-h0-lUY">
+                                <rect key="frame" x="334" y="81" width="25.666666666666686" height="50"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="45"/>
+                                <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal">
+                                    <imageReference key="image" image="xmark.circle.fill" catalog="system" symbolScale="large" renderingMode="hierarchical">
+                                        <hierarchicalColors>
+                                            <color systemColor="labelColor"/>
+                                            <color systemColor="secondaryLabelColor"/>
+                                            <color systemColor="tertiaryLabelColor"/>
+                                        </hierarchicalColors>
+                                    </imageReference>
+                                </state>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="7b8-no-JdL"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="Pgz-1r-Oye" firstAttribute="top" secondItem="7b8-no-JdL" secondAttribute="top" constant="22" id="Mro-15-bBy"/>
+                            <constraint firstItem="9IT-h0-lUY" firstAttribute="top" secondItem="Pgz-1r-Oye" secondAttribute="top" id="PSp-fy-meT"/>
+                            <constraint firstItem="Pgz-1r-Oye" firstAttribute="leading" secondItem="7b8-no-JdL" secondAttribute="leading" constant="16" id="Tex-W9-Qr9"/>
+                            <constraint firstItem="9IT-h0-lUY" firstAttribute="bottom" secondItem="Pgz-1r-Oye" secondAttribute="bottom" id="dHU-BU-S4V"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Sgp-q1-MPm" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -416,8 +453,14 @@
         <image name="chevron.forward" catalog="system" width="97" height="128"/>
         <image name="xmark" catalog="system" width="128" height="113"/>
         <image name="xmark.circle.fill" catalog="system" width="128" height="123"/>
+        <systemColor name="labelColor">
+            <color red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
         <systemColor name="linkColor">
             <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="secondaryLabelColor">
+            <color red="0.23529411764705882" green="0.23529411764705882" blue="0.2627450980392157" alpha="0.59999999999999998" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
         <systemColor name="secondarySystemBackgroundColor">
             <color red="0.94901960784313721" green="0.94901960784313721" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -433,6 +476,9 @@
         </systemColor>
         <systemColor name="systemGrayColor">
             <color red="0.55686274509803924" green="0.55686274509803924" blue="0.57647058823529407" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="tertiaryLabelColor">
+            <color red="0.23529411764705882" green="0.23529411764705882" blue="0.2627450980392157" alpha="0.29803921568627451" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
         <systemColor name="tintColor">
             <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
