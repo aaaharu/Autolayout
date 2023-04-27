@@ -606,10 +606,10 @@
                                         <rect key="frame" x="0.0" y="0.0" width="393" height="800"/>
                                         <subviews>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5P5-oQ-fk7" userLabel="First V">
-                                                <rect key="frame" x="0.0" y="10" width="393" height="204"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="393" height="214"/>
                                                 <subviews>
                                                     <stackView opaque="NO" contentMode="scaleToFill" spacing="92" translatesAutoresizingMaskIntoConstraints="NO" id="z3K-nI-D1D">
-                                                        <rect key="frame" x="10" y="68.666666666666657" width="373" height="67"/>
+                                                        <rect key="frame" x="10" y="73.666666666666657" width="373" height="67"/>
                                                         <subviews>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="야근, 외근 택시 잘 땐? 카카오 T 비즈니스" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KbK-A1-ygF">
                                                                 <rect key="frame" x="0.0" y="0.0" width="156.66666666666666" height="67"/>
@@ -618,7 +618,7 @@
                                                                 <nil key="highlightedColor"/>
                                                             </label>
                                                             <view contentMode="scaleToFill" horizontalCompressionResistancePriority="751" verticalCompressionResistancePriority="749" translatesAutoresizingMaskIntoConstraints="NO" id="8nO-yU-hn8">
-                                                                <rect key="frame" x="248.66666666666666" y="0.0" width="124.33333333333334" height="67"/>
+                                                                <rect key="frame" x="248.66666666666671" y="0.0" width="124.33333333333334" height="67"/>
                                                                 <color key="backgroundColor" systemColor="systemIndigoColor"/>
                                                             </view>
                                                         </subviews>
@@ -633,10 +633,10 @@
                                                 </constraints>
                                             </view>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jZW-Y3-rtv" userLabel="Second V">
-                                                <rect key="frame" x="10" y="170.66666666666666" width="373" height="79.333333333333343"/>
+                                                <rect key="frame" x="10" y="165.66666666666666" width="373" height="84.333333333333343"/>
                                                 <subviews>
                                                     <stackView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" spacing="2" translatesAutoresizingMaskIntoConstraints="NO" id="SNP-31-1QN">
-                                                        <rect key="frame" x="10" y="15" width="86.666666666666671" height="15.666666666666666"/>
+                                                        <rect key="frame" x="10" y="15" width="86.666666666666671" height="15.666666666666664"/>
                                                         <subviews>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" text="미리 교통비충전!" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumFontSize="7" translatesAutoresizingMaskIntoConstraints="NO" id="Mkv-0D-hEV">
                                                                 <rect key="frame" x="0.0" y="0.0" width="86.666666666666671" height="15.666666666666666"/>
@@ -676,26 +676,37 @@
                                                         </subviews>
                                                     </stackView>
                                                 </subviews>
-                                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                <color key="backgroundColor" systemColor="systemOrangeColor"/>
                                                 <color key="tintColor" systemColor="labelColor"/>
+                                                <constraints>
+                                                    <constraint firstItem="Mkv-0D-hEV" firstAttribute="centerY" secondItem="jZW-Y3-rtv" secondAttribute="centerY" id="clW-dQ-cAg"/>
+                                                </constraints>
                                             </view>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vsO-ZW-Y1q" userLabel="Third V">
-                                                <rect key="frame" x="10" y="258" width="373" height="73"/>
+                                                <rect key="frame" x="10" y="270" width="373" height="61"/>
                                                 <subviews>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="갑자기 무료촬영권 쏩니다!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="9" translatesAutoresizingMaskIntoConstraints="NO" id="IDx-W1-eb8">
-                                                        <rect key="frame" x="20" y="25.666666666666686" width="160" height="21.666666666666671"/>
-                                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="갑자기 무료촬영권 쏩니다!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="9" translatesAutoresizingMaskIntoConstraints="NO" id="IDx-W1-eb8">
+                                                        <rect key="frame" x="20" y="19.666666666666686" width="185.66666666666666" height="21.666666666666671"/>
                                                         <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
                                                         <nil key="textColor"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
-                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ugD-0R-5nv">
-                                                        <rect key="frame" x="230" y="0.0" width="73" height="73"/>
-                                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="ugD-0R-5nv">
+                                                        <rect key="frame" x="230.66666666666663" y="0.0" width="61" height="61"/>
                                                         <color key="backgroundColor" systemColor="systemGreenColor"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="width" secondItem="ugD-0R-5nv" secondAttribute="height" multiplier="1:1" id="lp0-QP-t1A"/>
+                                                        </constraints>
                                                     </imageView>
                                                 </subviews>
                                                 <color key="backgroundColor" systemColor="systemGray5Color"/>
+                                                <constraints>
+                                                    <constraint firstItem="IDx-W1-eb8" firstAttribute="centerY" secondItem="vsO-ZW-Y1q" secondAttribute="centerY" id="GSg-Qu-5Eh"/>
+                                                    <constraint firstItem="ugD-0R-5nv" firstAttribute="top" secondItem="vsO-ZW-Y1q" secondAttribute="top" id="PYs-WW-Jlb"/>
+                                                    <constraint firstAttribute="bottom" secondItem="ugD-0R-5nv" secondAttribute="bottom" id="jxa-d7-mke"/>
+                                                    <constraint firstItem="ugD-0R-5nv" firstAttribute="leading" secondItem="IDx-W1-eb8" secondAttribute="trailing" constant="25" id="vJd-uV-Tw4"/>
+                                                    <constraint firstItem="IDx-W1-eb8" firstAttribute="leading" secondItem="vsO-ZW-Y1q" secondAttribute="leading" constant="20" symbolic="YES" id="vTz-iz-f2X"/>
+                                                </constraints>
                                             </view>
                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="21" translatesAutoresizingMaskIntoConstraints="NO" id="FsW-1D-Ghc">
                                                 <rect key="frame" x="10" y="364" width="373" height="346"/>
@@ -902,6 +913,10 @@
                                                     <constraint firstAttribute="bottom" secondItem="3Fb-fQ-fay" secondAttribute="bottom" constant="244.66666666666669" id="s4a-l1-VBj"/>
                                                 </constraints>
                                             </stackView>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="S4a-bF-MAV">
+                                                <rect key="frame" x="10" y="718" width="373" height="82"/>
+                                                <color key="backgroundColor" systemColor="systemYellowColor"/>
+                                            </view>
                                         </subviews>
                                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                         <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -909,15 +924,19 @@
                                             <constraint firstItem="jZW-Y3-rtv" firstAttribute="trailing" secondItem="z3K-nI-D1D" secondAttribute="trailing" id="1Wp-Zn-3Ki"/>
                                             <constraint firstAttribute="bottom" secondItem="5P5-oQ-fk7" secondAttribute="bottom" constant="586" id="24k-t7-aeG"/>
                                             <constraint firstAttribute="bottom" secondItem="FsW-1D-Ghc" secondAttribute="bottom" constant="90" id="9Ok-Q9-ggC"/>
+                                            <constraint firstItem="S4a-bF-MAV" firstAttribute="top" secondItem="2oM-AG-7GC" secondAttribute="bottom" constant="8" symbolic="YES" id="EFg-KJ-Idl"/>
                                             <constraint firstAttribute="bottom" secondItem="jZW-Y3-rtv" secondAttribute="bottom" constant="550" id="KsP-76-NC6"/>
                                             <constraint firstAttribute="bottom" secondItem="vsO-ZW-Y1q" secondAttribute="bottom" constant="469" id="Lui-1X-e23"/>
+                                            <constraint firstAttribute="bottom" secondItem="S4a-bF-MAV" secondAttribute="bottom" id="MSz-MY-Mon"/>
                                             <constraint firstItem="jZW-Y3-rtv" firstAttribute="leading" secondItem="z3K-nI-D1D" secondAttribute="leading" id="NYt-ad-SSB"/>
-                                            <constraint firstItem="vsO-ZW-Y1q" firstAttribute="top" secondItem="jZW-Y3-rtv" secondAttribute="bottom" constant="8" symbolic="YES" id="RXm-qA-hzM"/>
+                                            <constraint firstItem="vsO-ZW-Y1q" firstAttribute="top" secondItem="jZW-Y3-rtv" secondAttribute="bottom" constant="20" id="RXm-qA-hzM"/>
+                                            <constraint firstItem="S4a-bF-MAV" firstAttribute="trailing" secondItem="2oM-AG-7GC" secondAttribute="trailing" id="SGA-pI-gdV"/>
                                             <constraint firstItem="jZW-Y3-rtv" firstAttribute="top" secondItem="z3K-nI-D1D" secondAttribute="bottom" constant="25" id="TOV-Al-ghM"/>
                                             <constraint firstItem="FsW-1D-Ghc" firstAttribute="leading" secondItem="vsO-ZW-Y1q" secondAttribute="leading" id="VrJ-X1-vff"/>
                                             <constraint firstItem="FsW-1D-Ghc" firstAttribute="trailing" secondItem="vsO-ZW-Y1q" secondAttribute="trailing" id="ZCl-WN-0DJ"/>
                                             <constraint firstItem="vsO-ZW-Y1q" firstAttribute="trailing" secondItem="jZW-Y3-rtv" secondAttribute="trailing" id="c3a-RG-5cn"/>
                                             <constraint firstAttribute="height" constant="800" id="dcI-F9-skL"/>
+                                            <constraint firstItem="S4a-bF-MAV" firstAttribute="leading" secondItem="2oM-AG-7GC" secondAttribute="leading" id="mFc-di-Khv"/>
                                             <constraint firstItem="vsO-ZW-Y1q" firstAttribute="leading" secondItem="jZW-Y3-rtv" secondAttribute="leading" id="msD-jX-UJc"/>
                                             <constraint firstItem="FsW-1D-Ghc" firstAttribute="top" secondItem="vsO-ZW-Y1q" secondAttribute="bottom" constant="33" id="q4A-nK-09S"/>
                                         </constraints>
@@ -942,7 +961,7 @@
                             <constraint firstItem="lMo-II-q1s" firstAttribute="leading" secondItem="ItS-yz-WwL" secondAttribute="leading" id="OeF-uV-cRr"/>
                             <constraint firstItem="ItS-yz-WwL" firstAttribute="trailing" secondItem="5P5-oQ-fk7" secondAttribute="trailing" id="SqT-GJ-WwJ"/>
                             <constraint firstItem="ItS-yz-WwL" firstAttribute="bottom" secondItem="lMo-II-q1s" secondAttribute="bottom" id="TVI-Lg-0d7"/>
-                            <constraint firstItem="5P5-oQ-fk7" firstAttribute="top" secondItem="ItS-yz-WwL" secondAttribute="top" constant="10" id="dd8-5s-kOo"/>
+                            <constraint firstItem="5P5-oQ-fk7" firstAttribute="top" secondItem="ItS-yz-WwL" secondAttribute="top" id="dd8-5s-kOo"/>
                             <constraint firstItem="5P5-oQ-fk7" firstAttribute="leading" secondItem="ItS-yz-WwL" secondAttribute="leading" id="gDJ-Zl-o4x"/>
                         </constraints>
                     </view>
@@ -1001,6 +1020,12 @@
         </systemColor>
         <systemColor name="systemIndigoColor">
             <color red="0.34509803921568627" green="0.33725490196078434" blue="0.83921568627450982" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemOrangeColor">
+            <color red="1" green="0.58431372549019611" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemYellowColor">
+            <color red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
         <systemColor name="tertiaryLabelColor">
             <color red="0.23529411764705882" green="0.23529411764705882" blue="0.2627450980392157" alpha="0.29803921568627451" colorSpace="custom" customColorSpace="sRGB"/>
