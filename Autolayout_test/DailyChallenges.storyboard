@@ -604,9 +604,60 @@
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="spB-ma-Gli">
                                         <rect key="frame" x="0.0" y="0.0" width="393" height="800"/>
+                                        <subviews>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5P5-oQ-fk7">
+                                                <rect key="frame" x="0.0" y="10" width="393" height="195"/>
+                                                <subviews>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="92" translatesAutoresizingMaskIntoConstraints="NO" id="z3K-nI-D1D">
+                                                        <rect key="frame" x="25" y="64" width="343" height="67"/>
+                                                        <subviews>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="야근, 외근 택시 잘 땐? 카카오 T 비즈니스" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KbK-A1-ygF">
+                                                                <rect key="frame" x="0.0" y="0.0" width="156.66666666666666" height="67"/>
+                                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
+                                                                <nil key="textColor"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                            <view contentMode="scaleToFill" horizontalCompressionResistancePriority="751" verticalCompressionResistancePriority="749" translatesAutoresizingMaskIntoConstraints="NO" id="8nO-yU-hn8">
+                                                                <rect key="frame" x="248.66666666666671" y="0.0" width="94.333333333333343" height="67"/>
+                                                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                            </view>
+                                                        </subviews>
+                                                    </stackView>
+                                                </subviews>
+                                                <color key="backgroundColor" systemColor="systemCyanColor"/>
+                                                <constraints>
+                                                    <constraint firstItem="z3K-nI-D1D" firstAttribute="leading" secondItem="5P5-oQ-fk7" secondAttribute="leading" constant="25" id="Dff-5H-6BJ"/>
+                                                    <constraint firstAttribute="trailing" secondItem="z3K-nI-D1D" secondAttribute="trailing" constant="25" id="X9M-Aa-RTu"/>
+                                                    <constraint firstItem="z3K-nI-D1D" firstAttribute="top" secondItem="5P5-oQ-fk7" secondAttribute="top" constant="64" id="afv-LV-aS3"/>
+                                                    <constraint firstAttribute="bottom" secondItem="z3K-nI-D1D" secondAttribute="bottom" constant="64" id="gRj-jk-ohH"/>
+                                                </constraints>
+                                            </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jZW-Y3-rtv">
+                                                <rect key="frame" x="25" y="171" width="343" height="79"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="미리 교통비충전!" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Mkv-0D-hEV">
+                                                        <rect key="frame" x="47" y="6" width="156.66666666666666" height="67"/>
+                                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
+                                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="79" id="j9f-yO-sTW"/>
+                                                </constraints>
+                                            </view>
+                                        </subviews>
                                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                         <constraints>
+                                            <constraint firstItem="jZW-Y3-rtv" firstAttribute="trailing" secondItem="z3K-nI-D1D" secondAttribute="trailing" id="4Ih-Jz-tTS"/>
+                                            <constraint firstAttribute="trailing" secondItem="5P5-oQ-fk7" secondAttribute="trailing" id="A6Y-mj-r6M"/>
+                                            <constraint firstItem="jZW-Y3-rtv" firstAttribute="top" secondItem="z3K-nI-D1D" secondAttribute="bottom" constant="30" id="Na2-ih-Zti"/>
+                                            <constraint firstItem="jZW-Y3-rtv" firstAttribute="leading" secondItem="z3K-nI-D1D" secondAttribute="leading" id="Nz8-dg-fN0"/>
+                                            <constraint firstItem="5P5-oQ-fk7" firstAttribute="top" secondItem="spB-ma-Gli" secondAttribute="top" constant="10" id="Pn6-dN-nUS"/>
                                             <constraint firstAttribute="height" constant="800" id="afO-EO-DwX"/>
+                                            <constraint firstItem="5P5-oQ-fk7" firstAttribute="leading" secondItem="spB-ma-Gli" secondAttribute="leading" id="sJY-Am-D7k"/>
                                         </constraints>
                                     </view>
                                 </subviews>
@@ -628,6 +679,7 @@
                             <constraint firstItem="lMo-II-q1s" firstAttribute="bottom" secondItem="ItS-yz-WwL" secondAttribute="bottom" id="ZMQ-kS-4g0"/>
                             <constraint firstItem="lMo-II-q1s" firstAttribute="trailing" secondItem="ItS-yz-WwL" secondAttribute="trailing" id="dGD-U9-rOk"/>
                             <constraint firstItem="ItS-yz-WwL" firstAttribute="top" secondItem="lMo-II-q1s" secondAttribute="top" id="eeK-qC-4s0"/>
+                            <constraint firstItem="ItS-yz-WwL" firstAttribute="bottom" secondItem="5P5-oQ-fk7" secondAttribute="bottom" constant="602" id="f6R-bV-LJU"/>
                         </constraints>
                     </view>
                     <size key="freeformSize" width="393" height="900"/>
@@ -664,6 +716,9 @@
         </systemColor>
         <systemColor name="systemBlueColor">
             <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemCyanColor">
+            <color red="0.19607843137254902" green="0.67843137254901964" blue="0.90196078431372551" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
         <systemColor name="systemGray4Color">
             <color red="0.81960784313725488" green="0.81960784313725488" blue="0.83921568627450982" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
