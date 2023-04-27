@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="NL8-zD-D3X">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="AD0-rt-rNC">
     <device id="retina6_12" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
@@ -447,7 +447,7 @@
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="사용자" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HNz-ui-b4h">
                                 <rect key="frame" x="267.33333333333331" y="161" width="44.333333333333314" height="20.333333333333343"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
+                                <color key="textColor" systemColor="opaqueSeparatorColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4b6-Wv-Vsl">
@@ -501,7 +501,7 @@
                                         <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="plain">
-                                            <imageReference key="image" image="checkmark.circle.fill" catalog="system" renderingMode="hierarchical-single">
+                                            <imageReference key="image" image="checkmark.circle.fill" catalog="system" symbolScale="large" renderingMode="hierarchical-single">
                                                 <hierarchicalColors>
                                                     <color systemColor="linkColor"/>
                                                     <color systemColor="secondaryLabelColor"/>
@@ -551,7 +551,7 @@
                                         <rect key="frame" x="314.66666666666669" y="0.0" width="50" height="50"/>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="plain">
-                                            <imageReference key="image" image="plus.circle.fill" catalog="system" renderingMode="hierarchical-single">
+                                            <imageReference key="image" image="plus.circle.fill" catalog="system" symbolScale="large" renderingMode="hierarchical-single">
                                                 <hierarchicalColors>
                                                     <color systemColor="labelColor"/>
                                                     <color systemColor="secondaryLabelColor"/>
@@ -589,7 +589,52 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Sgp-q1-MPm" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1900" y="-27.464788732394368"/>
+            <point key="canvasLocation" x="1666" y="-27"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="Yqo-Zc-eqY">
+            <objects>
+                <viewController id="AD0-rt-rNC" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="oTO-oa-DQM">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="900"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="lMo-II-q1s">
+                                <rect key="frame" x="0.0" y="59" width="393" height="807"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="spB-ma-Gli">
+                                        <rect key="frame" x="0.0" y="0.0" width="393" height="800"/>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="800" id="afO-EO-DwX"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="spB-ma-Gli" firstAttribute="top" secondItem="eLk-Jr-aSd" secondAttribute="top" id="6LI-Xj-5YA"/>
+                                    <constraint firstItem="spB-ma-Gli" firstAttribute="bottom" secondItem="eLk-Jr-aSd" secondAttribute="bottom" id="Hkl-mR-QWo"/>
+                                    <constraint firstItem="spB-ma-Gli" firstAttribute="leading" secondItem="eLk-Jr-aSd" secondAttribute="leading" id="YjJ-hU-n0t"/>
+                                    <constraint firstItem="spB-ma-Gli" firstAttribute="width" secondItem="566-KP-ywy" secondAttribute="width" id="fKl-tl-6GF"/>
+                                    <constraint firstItem="spB-ma-Gli" firstAttribute="trailing" secondItem="eLk-Jr-aSd" secondAttribute="trailing" id="m5d-g5-kCn"/>
+                                </constraints>
+                                <viewLayoutGuide key="contentLayoutGuide" id="eLk-Jr-aSd"/>
+                                <viewLayoutGuide key="frameLayoutGuide" id="566-KP-ywy"/>
+                            </scrollView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="ItS-yz-WwL"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="lMo-II-q1s" firstAttribute="leading" secondItem="ItS-yz-WwL" secondAttribute="leading" id="RZc-dk-zmL"/>
+                            <constraint firstItem="lMo-II-q1s" firstAttribute="bottom" secondItem="ItS-yz-WwL" secondAttribute="bottom" id="ZMQ-kS-4g0"/>
+                            <constraint firstItem="lMo-II-q1s" firstAttribute="trailing" secondItem="ItS-yz-WwL" secondAttribute="trailing" id="dGD-U9-rOk"/>
+                            <constraint firstItem="ItS-yz-WwL" firstAttribute="top" secondItem="lMo-II-q1s" secondAttribute="top" id="eeK-qC-4s0"/>
+                        </constraints>
+                    </view>
+                    <size key="freeformSize" width="393" height="900"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Vxx-Ol-d0u" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2432.8244274809158" y="-27.464788732394368"/>
         </scene>
     </scenes>
     <resources>
@@ -604,6 +649,9 @@
         </systemColor>
         <systemColor name="linkColor">
             <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="opaqueSeparatorColor">
+            <color red="0.77647058823529413" green="0.77647058823529413" blue="0.78431372549019607" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
         <systemColor name="secondaryLabelColor">
             <color red="0.23529411764705882" green="0.23529411764705882" blue="0.2627450980392157" alpha="0.59999999999999998" colorSpace="custom" customColorSpace="sRGB"/>
