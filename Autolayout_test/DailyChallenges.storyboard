@@ -636,16 +636,10 @@
                                                 <rect key="frame" x="20" y="171" width="353" height="79"/>
                                                 <subviews>
                                                     <stackView opaque="NO" contentMode="scaleToFill" spacing="2" translatesAutoresizingMaskIntoConstraints="NO" id="SNP-31-1QN">
-                                                        <rect key="frame" x="10" y="15" width="137" height="49"/>
+                                                        <rect key="frame" x="10" y="15.000000000000028" width="137" height="49"/>
                                                         <subviews>
-                                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="ugD-0R-5nv">
-                                                                <rect key="frame" x="0.0" y="0.0" width="49" height="49"/>
-                                                                <constraints>
-                                                                    <constraint firstAttribute="width" secondItem="ugD-0R-5nv" secondAttribute="height" multiplier="1:1" id="Bxr-Hs-HTb"/>
-                                                                </constraints>
-                                                            </imageView>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" text="미리 교통비충전!" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumFontSize="7" translatesAutoresizingMaskIntoConstraints="NO" id="Mkv-0D-hEV">
-                                                                <rect key="frame" x="51" y="0.0" width="86" height="49"/>
+                                                                <rect key="frame" x="0.0" y="0.0" width="137" height="49"/>
                                                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="13"/>
                                                                 <color key="textColor" red="0.51372549020000002" green="0.56862745100000001" blue="0.63137254899999995" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                                 <nil key="highlightedColor"/>
@@ -656,7 +650,7 @@
                                                         </constraints>
                                                     </stackView>
                                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="x3A-wc-Tv3">
-                                                        <rect key="frame" x="172" y="15" width="171" height="49"/>
+                                                        <rect key="frame" x="172" y="15.000000000000028" width="171" height="49"/>
                                                         <subviews>
                                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oMj-Md-aWe">
                                                                 <rect key="frame" x="0.0" y="0.0" width="57" height="49"/>
@@ -700,16 +694,46 @@
                                                     <constraint firstItem="x3A-wc-Tv3" firstAttribute="leading" secondItem="SNP-31-1QN" secondAttribute="trailing" constant="25" id="rDO-SC-IaD"/>
                                                 </constraints>
                                             </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vsO-ZW-Y1q">
+                                                <rect key="frame" x="20" y="258" width="353" height="73"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="갑자기 무료촬영권 쏩니다!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="9" translatesAutoresizingMaskIntoConstraints="NO" id="IDx-W1-eb8">
+                                                        <rect key="frame" x="20" y="25.666666666666686" width="160" height="21.666666666666671"/>
+                                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="ugD-0R-5nv">
+                                                        <rect key="frame" x="230" y="0.0" width="73" height="73"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="width" secondItem="ugD-0R-5nv" secondAttribute="height" multiplier="1:1" id="w6w-Xd-sG8"/>
+                                                        </constraints>
+                                                    </imageView>
+                                                </subviews>
+                                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="trailing" secondItem="ugD-0R-5nv" secondAttribute="trailing" constant="50" id="0nl-2u-b4I"/>
+                                                    <constraint firstItem="IDx-W1-eb8" firstAttribute="leading" secondItem="vsO-ZW-Y1q" secondAttribute="leading" constant="20" id="8a8-kT-otL"/>
+                                                    <constraint firstItem="IDx-W1-eb8" firstAttribute="centerY" secondItem="vsO-ZW-Y1q" secondAttribute="centerY" id="EmR-mZ-an1"/>
+                                                    <constraint firstItem="ugD-0R-5nv" firstAttribute="leading" secondItem="IDx-W1-eb8" secondAttribute="trailing" constant="50" id="Hyt-6i-AHe"/>
+                                                    <constraint firstAttribute="bottom" secondItem="ugD-0R-5nv" secondAttribute="bottom" id="ZrH-EC-MkL"/>
+                                                    <constraint firstItem="ugD-0R-5nv" firstAttribute="top" secondItem="vsO-ZW-Y1q" secondAttribute="top" id="pHc-L0-7DQ"/>
+                                                </constraints>
+                                            </view>
                                         </subviews>
                                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                         <constraints>
                                             <constraint firstItem="jZW-Y3-rtv" firstAttribute="trailing" secondItem="z3K-nI-D1D" secondAttribute="trailing" id="4Ih-Jz-tTS"/>
                                             <constraint firstItem="jZW-Y3-rtv" firstAttribute="centerX" secondItem="spB-ma-Gli" secondAttribute="centerX" id="5Qm-DJ-Gmy"/>
                                             <constraint firstAttribute="trailing" secondItem="5P5-oQ-fk7" secondAttribute="trailing" id="A6Y-mj-r6M"/>
+                                            <constraint firstItem="vsO-ZW-Y1q" firstAttribute="firstBaseline" secondItem="jZW-Y3-rtv" secondAttribute="baseline" constant="8" symbolType="layoutAnchor" id="EIq-vZ-Dop"/>
                                             <constraint firstItem="jZW-Y3-rtv" firstAttribute="top" secondItem="z3K-nI-D1D" secondAttribute="bottom" constant="30" id="Na2-ih-Zti"/>
                                             <constraint firstItem="jZW-Y3-rtv" firstAttribute="leading" secondItem="z3K-nI-D1D" secondAttribute="leading" id="Nz8-dg-fN0"/>
                                             <constraint firstItem="5P5-oQ-fk7" firstAttribute="top" secondItem="spB-ma-Gli" secondAttribute="top" constant="10" id="Pn6-dN-nUS"/>
+                                            <constraint firstAttribute="bottom" secondItem="vsO-ZW-Y1q" secondAttribute="bottom" constant="469" id="XmP-Zb-9KS"/>
                                             <constraint firstAttribute="height" constant="800" id="afO-EO-DwX"/>
+                                            <constraint firstItem="vsO-ZW-Y1q" firstAttribute="trailing" secondItem="jZW-Y3-rtv" secondAttribute="trailing" id="cfx-nx-Epb"/>
+                                            <constraint firstItem="vsO-ZW-Y1q" firstAttribute="leading" secondItem="jZW-Y3-rtv" secondAttribute="leading" id="icf-7J-ZaV"/>
                                             <constraint firstItem="5P5-oQ-fk7" firstAttribute="leading" secondItem="spB-ma-Gli" secondAttribute="leading" id="sJY-Am-D7k"/>
                                         </constraints>
                                     </view>
