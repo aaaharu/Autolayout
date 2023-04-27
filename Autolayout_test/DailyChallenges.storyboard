@@ -618,7 +618,7 @@
                                                                 <nil key="highlightedColor"/>
                                                             </label>
                                                             <view contentMode="scaleToFill" horizontalCompressionResistancePriority="751" verticalCompressionResistancePriority="749" translatesAutoresizingMaskIntoConstraints="NO" id="8nO-yU-hn8">
-                                                                <rect key="frame" x="248.66666666666671" y="0.0" width="126.33333333333334" height="67"/>
+                                                                <rect key="frame" x="248.66666666666666" y="0.0" width="126.33333333333334" height="67"/>
                                                                 <color key="backgroundColor" systemColor="systemIndigoColor"/>
                                                             </view>
                                                         </subviews>
@@ -636,19 +636,19 @@
                                                 <rect key="frame" x="10" y="148.66666666666666" width="375" height="101.33333333333334"/>
                                                 <subviews>
                                                     <stackView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="SNP-31-1QN">
-                                                        <rect key="frame" x="10" y="15" width="364" height="28.333333333333329"/>
+                                                        <rect key="frame" x="10" y="15" width="335" height="28.333333333333329"/>
                                                         <subviews>
-                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" text="미리 교통비충전!" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumFontSize="7" translatesAutoresizingMaskIntoConstraints="NO" id="Mkv-0D-hEV">
-                                                                <rect key="frame" x="0.0" y="0.0" width="167" height="28.333333333333332"/>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" text="미리 교통비충전!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="7" translatesAutoresizingMaskIntoConstraints="NO" id="Mkv-0D-hEV">
+                                                                <rect key="frame" x="0.0" y="0.0" width="130" height="28.333333333333332"/>
                                                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="13"/>
                                                                 <color key="textColor" red="0.51372549020000002" green="0.56862745100000001" blue="0.63137254899999995" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                                 <nil key="highlightedColor"/>
                                                             </label>
                                                             <stackView opaque="NO" contentMode="scaleToFill" horizontalCompressionResistancePriority="751" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="x3A-wc-Tv3">
-                                                                <rect key="frame" x="197" y="0.0" width="167" height="28.333333333333332"/>
+                                                                <rect key="frame" x="160" y="0.0" width="175" height="28.333333333333332"/>
                                                                 <subviews>
                                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oMj-Md-aWe">
-                                                                        <rect key="frame" x="0.0" y="0.0" width="55.666666666666664" height="28.333333333333332"/>
+                                                                        <rect key="frame" x="0.0" y="0.0" width="58.333333333333336" height="28.333333333333332"/>
                                                                         <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                         <state key="normal" title="Button"/>
                                                                         <buttonConfiguration key="configuration" style="plain" title="충전">
@@ -656,7 +656,7 @@
                                                                         </buttonConfiguration>
                                                                     </button>
                                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zv1-Z9-nLD">
-                                                                        <rect key="frame" x="55.666666666666686" y="0.0" width="55.666666666666657" height="28.333333333333332"/>
+                                                                        <rect key="frame" x="58.333333333333343" y="0.0" width="58.333333333333343" height="28.333333333333332"/>
                                                                         <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                         <state key="normal" title="Button"/>
                                                                         <buttonConfiguration key="configuration" style="plain" title="선물">
@@ -664,7 +664,7 @@
                                                                         </buttonConfiguration>
                                                                     </button>
                                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="S6N-hQ-zpS">
-                                                                        <rect key="frame" x="111.33333333333333" y="0.0" width="55.666666666666671" height="28.333333333333332"/>
+                                                                        <rect key="frame" x="116.66666666666667" y="0.0" width="58.333333333333329" height="28.333333333333332"/>
                                                                         <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                         <state key="normal" title="Button"/>
                                                                         <buttonConfiguration key="configuration" style="plain" title="EVENT">
@@ -675,14 +675,16 @@
                                                             </stackView>
                                                         </subviews>
                                                         <constraints>
-                                                            <constraint firstItem="Mkv-0D-hEV" firstAttribute="top" secondItem="x3A-wc-Tv3" secondAttribute="bottom" constant="-28.333333333333332" id="KS0-RY-GZn"/>
+                                                            <constraint firstItem="x3A-wc-Tv3" firstAttribute="leading" secondItem="Mkv-0D-hEV" secondAttribute="trailing" constant="29.999999999999972" id="fMI-6b-U9o"/>
                                                         </constraints>
                                                     </stackView>
                                                 </subviews>
                                                 <color key="backgroundColor" systemColor="systemOrangeColor"/>
                                                 <color key="tintColor" systemColor="labelColor"/>
                                                 <constraints>
+                                                    <constraint firstItem="x3A-wc-Tv3" firstAttribute="leading" secondItem="jZW-Y3-rtv" secondAttribute="leading" constant="180" id="Z8F-I7-wmL"/>
                                                     <constraint firstItem="Mkv-0D-hEV" firstAttribute="centerY" secondItem="jZW-Y3-rtv" secondAttribute="centerY" id="clW-dQ-cAg"/>
+                                                    <constraint firstAttribute="trailing" secondItem="x3A-wc-Tv3" secondAttribute="trailing" constant="20" id="r3n-Cf-JP5"/>
                                                 </constraints>
                                             </view>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vsO-ZW-Y1q" userLabel="Third V">
