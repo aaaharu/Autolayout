@@ -1031,7 +1031,7 @@
                                 </constraints>
                             </stackView>
                             <stackView opaque="NO" contentMode="scaleToFill" spacing="25" translatesAutoresizingMaskIntoConstraints="NO" id="rnE-EA-fN3">
-                                <rect key="frame" x="90" y="124" width="128" height="25"/>
+                                <rect key="frame" x="90" y="124" width="280" height="25"/>
                                 <subviews>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Z5z-B6-5Jb">
                                         <rect key="frame" x="0.0" y="0.0" width="25" height="25"/>
@@ -1043,12 +1043,15 @@
                                         </constraints>
                                     </imageView>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="목적지 입력" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="9" translatesAutoresizingMaskIntoConstraints="NO" id="tq7-31-ljr">
-                                        <rect key="frame" x="50" y="0.0" width="78" height="25"/>
+                                        <rect key="frame" x="50" y="0.0" width="230" height="25"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <color key="textColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                 </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="tq7-31-ljr" secondAttribute="trailing" id="5li-ib-HJN"/>
+                                </constraints>
                             </stackView>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="0fp-Bo-KEF">
                                 <rect key="frame" x="101" y="95" width="3" height="19"/>
@@ -1101,6 +1104,7 @@
                         <constraints>
                             <constraint firstItem="741-Zu-ohH" firstAttribute="leading" secondItem="Bu7-h7-say" secondAttribute="leading" id="0uK-eZ-qVy"/>
                             <constraint firstItem="p4b-MF-RTm" firstAttribute="leading" secondItem="Bu7-h7-say" secondAttribute="leading" id="EFc-zn-FhD"/>
+                            <constraint firstItem="rnE-EA-fN3" firstAttribute="trailing" secondItem="Ek3-kp-ARR" secondAttribute="trailing" id="NsV-Pe-Hhh"/>
                             <constraint firstItem="HKF-an-sou" firstAttribute="top" secondItem="741-Zu-ohH" secondAttribute="top" constant="15" id="TC4-Co-8Nk"/>
                             <constraint firstItem="Z5z-B6-5Jb" firstAttribute="top" secondItem="0fp-Bo-KEF" secondAttribute="bottom" constant="10" id="Wq1-y0-uRL"/>
                             <constraint firstItem="rnE-EA-fN3" firstAttribute="leading" secondItem="OOX-J3-E7b" secondAttribute="leading" id="Xz7-h8-eEH"/>
@@ -1111,7 +1115,6 @@
                             <constraint firstItem="HKF-an-sou" firstAttribute="leading" secondItem="741-Zu-ohH" secondAttribute="leading" constant="40" id="hnI-p7-zjY"/>
                             <constraint firstItem="HKF-an-sou" firstAttribute="bottom" secondItem="741-Zu-ohH" secondAttribute="bottom" constant="-15" id="iyU-GS-rNw"/>
                             <constraint firstItem="p4b-MF-RTm" firstAttribute="top" secondItem="tq7-31-ljr" secondAttribute="bottom" constant="25" id="kts-Nu-ELJ"/>
-                            <constraint firstItem="tq7-31-ljr" firstAttribute="leading" secondItem="Bu7-h7-say" secondAttribute="leading" constant="135" id="m9J-e1-su5"/>
                             <constraint firstItem="0fp-Bo-KEF" firstAttribute="top" secondItem="vOe-29-2O5" secondAttribute="bottom" constant="10" id="myk-id-ByK"/>
                             <constraint firstItem="p4b-MF-RTm" firstAttribute="trailing" secondItem="Bu7-h7-say" secondAttribute="trailing" id="t6C-w0-aO0"/>
                             <constraint firstItem="0fp-Bo-KEF" firstAttribute="centerX" secondItem="vOe-29-2O5" secondAttribute="centerX" id="vr9-bf-dvh"/>
