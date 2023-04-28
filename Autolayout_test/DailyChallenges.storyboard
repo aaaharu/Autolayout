@@ -990,13 +990,41 @@
                         <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UpD-mR-8Pw">
-                                <rect key="frame" x="40" y="62" width="40" height="35"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" image="chevron.backward" catalog="system"/>
-                            </button>
+                            <stackView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="g0a-X8-8aK">
+                                <rect key="frame" x="29.999999999999986" y="60" width="206.66666666666666" height="25"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UpD-mR-8Pw">
+                                        <rect key="frame" x="0.0" y="0.0" width="30" height="25"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="30" id="rdu-eQ-EXi"/>
+                                            <constraint firstAttribute="height" constant="25" id="trk-Xx-J4D"/>
+                                        </constraints>
+                                        <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" image="chevron.backward" catalog="system"/>
+                                    </button>
+                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="OOX-J3-E7b">
+                                        <rect key="frame" x="59.999999999999986" y="0.0" width="146.66666666666663" height="25"/>
+                                        <subviews>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="vOe-29-2O5">
+                                                <rect key="frame" x="0.0" y="0.0" width="25" height="25"/>
+                                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" secondItem="vOe-29-2O5" secondAttribute="height" multiplier="1:1" id="WlY-SO-J7c"/>
+                                                    <constraint firstAttribute="height" constant="25" id="iKf-5a-wre"/>
+                                                </constraints>
+                                            </imageView>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="현위치 : 일원동" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="9" translatesAutoresizingMaskIntoConstraints="NO" id="Ek3-kp-ARR">
+                                                <rect key="frame" x="45.000000000000007" y="0.0" width="101.66666666666669" height="25"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                            </stackView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="Bu7-h7-say"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -1004,7 +1032,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="EsR-Ur-yKO" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3317" y="-48"/>
+            <point key="canvasLocation" x="3316.9230769230767" y="-48.341232227488149"/>
         </scene>
     </scenes>
     <resources>
