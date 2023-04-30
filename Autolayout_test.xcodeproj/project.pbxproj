@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		D34D36EC29F94A2800CECA05 /* DailyChallenges.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D34D36EB29F94A2800CECA05 /* DailyChallenges.storyboard */; };
+		D376014329FE949E00A06FAA /* NavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D376014229FE949E00A06FAA /* NavigationController.swift */; };
 		D3B7523C29E8162E0078A83C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3B7523B29E8162E0078A83C /* AppDelegate.swift */; };
 		D3B7523E29E8162E0078A83C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3B7523D29E8162E0078A83C /* SceneDelegate.swift */; };
 		D3B7524029E8162E0078A83C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3B7523F29E8162E0078A83C /* ViewController.swift */; };
@@ -18,6 +19,7 @@
 
 /* Begin PBXFileReference section */
 		D34D36EB29F94A2800CECA05 /* DailyChallenges.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = DailyChallenges.storyboard; sourceTree = "<group>"; };
+		D376014229FE949E00A06FAA /* NavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationController.swift; sourceTree = "<group>"; };
 		D3B7523829E8162E0078A83C /* Autolayout_test.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Autolayout_test.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D3B7523B29E8162E0078A83C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D3B7523D29E8162E0078A83C /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -61,6 +63,7 @@
 				D3B7523B29E8162E0078A83C /* AppDelegate.swift */,
 				D3B7523D29E8162E0078A83C /* SceneDelegate.swift */,
 				D3B7523F29E8162E0078A83C /* ViewController.swift */,
+				D376014229FE949E00A06FAA /* NavigationController.swift */,
 				D3B7524129E8162E0078A83C /* Main.storyboard */,
 				D34D36EB29F94A2800CECA05 /* DailyChallenges.storyboard */,
 				D3B7524429E8162F0078A83C /* Assets.xcassets */,
@@ -143,6 +146,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D3B7524029E8162E0078A83C /* ViewController.swift in Sources */,
+				D376014329FE949E00A06FAA /* NavigationController.swift in Sources */,
 				D3B7523C29E8162E0078A83C /* AppDelegate.swift in Sources */,
 				D3B7523E29E8162E0078A83C /* SceneDelegate.swift in Sources */,
 			);
