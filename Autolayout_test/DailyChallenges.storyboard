@@ -723,6 +723,29 @@
                                                     <constraint firstAttribute="height" constant="10" id="ceU-KI-b8r"/>
                                                 </constraints>
                                             </view>
+                                            <stackView opaque="NO" contentMode="scaleToFill" distribution="equalSpacing" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="5oX-5Q-sPc">
+                                                <rect key="frame" x="25" y="240" width="340" height="24"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="751" text="일기 목록" lineBreakMode="clip" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Gg1-Ik-sJn">
+                                                        <rect key="frame" x="0.0" y="0.0" width="74.333333333333329" height="24"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                                        <color key="textColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="749" text="통계" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0Lm-rp-H4m">
+                                                        <rect key="frame" x="169.33333333333334" y="0.0" width="34.666666666666657" height="24"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="749" text="Q&amp;A" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xEv-8O-w0U">
+                                                        <rect key="frame" x="298.66666666666669" y="0.0" width="41.333333333333314" height="24"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                                        <color key="textColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
+                                            </stackView>
                                         </subviews>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <constraints>
@@ -730,7 +753,9 @@
                                             <constraint firstAttribute="height" constant="1000" id="8wX-CM-HlI"/>
                                             <constraint firstAttribute="trailing" secondItem="rbO-RK-zQm" secondAttribute="trailing" id="9SS-lC-M4g"/>
                                             <constraint firstItem="oRG-MM-jMt" firstAttribute="trailing" secondItem="Jzv-eB-uWo" secondAttribute="trailing" id="Bfd-ag-LOe"/>
+                                            <constraint firstItem="5oX-5Q-sPc" firstAttribute="top" secondItem="rbO-RK-zQm" secondAttribute="bottom" constant="20" id="OPe-cE-s3p"/>
                                             <constraint firstAttribute="trailing" secondItem="fF9-gx-OZX" secondAttribute="trailing" constant="15" id="R1H-zu-40p"/>
+                                            <constraint firstAttribute="trailing" secondItem="5oX-5Q-sPc" secondAttribute="trailing" constant="25" id="aA9-Co-uDI"/>
                                             <constraint firstAttribute="trailing" secondItem="Jzv-eB-uWo" secondAttribute="trailing" constant="25" id="axL-HV-WMH"/>
                                             <constraint firstItem="Jzv-eB-uWo" firstAttribute="top" secondItem="fF9-gx-OZX" secondAttribute="bottom" constant="8" symbolic="YES" id="c4D-No-tMq"/>
                                             <constraint firstItem="fF9-gx-OZX" firstAttribute="top" secondItem="5si-Wj-fvS" secondAttribute="top" constant="20" id="esI-Rd-Grl"/>
@@ -740,6 +765,7 @@
                                             <constraint firstItem="tMy-9Q-aHf" firstAttribute="leading" secondItem="puq-KU-iuj" secondAttribute="leading" id="rVD-t9-Epr"/>
                                             <constraint firstItem="oRG-MM-jMt" firstAttribute="top" secondItem="Jzv-eB-uWo" secondAttribute="bottom" constant="8" symbolic="YES" id="v16-kc-aRF"/>
                                             <constraint firstItem="fF9-gx-OZX" firstAttribute="leading" secondItem="5si-Wj-fvS" secondAttribute="leading" constant="15" id="wtp-wy-SXu"/>
+                                            <constraint firstItem="5oX-5Q-sPc" firstAttribute="leading" secondItem="5si-Wj-fvS" secondAttribute="leading" constant="25" id="y9N-Bf-ytj"/>
                                         </constraints>
                                     </view>
                                 </subviews>
