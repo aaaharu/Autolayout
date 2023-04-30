@@ -375,12 +375,12 @@
         <scene sceneID="ueV-bb-OzK">
             <objects>
                 <viewController id="NL8-zD-D3X" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="u6K-wx-3jV">
+                    <view key="view" contentMode="scaleToFill" ambiguous="YES" id="u6K-wx-3jV">
                         <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <stackView opaque="NO" contentMode="scaleToFill" spacing="18" translatesAutoresizingMaskIntoConstraints="NO" id="Lao-aW-aPA">
-                                <rect key="frame" x="12.666666666666657" y="69" width="364.66666666666674" height="50"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" spacing="18" translatesAutoresizingMaskIntoConstraints="NO" id="Lao-aW-aPA">
+                                <rect key="frame" x="12.666666666666657" y="69" width="364.66666666666669" height="50"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Pgz-1r-Oye">
                                         <rect key="frame" x="0.0" y="0.0" width="300" height="50"/>
@@ -466,8 +466,8 @@
                                     <constraint firstAttribute="height" constant="2" id="tz1-EX-uvk"/>
                                 </constraints>
                             </view>
-                            <stackView opaque="NO" contentMode="scaleToFill" spacing="195" translatesAutoresizingMaskIntoConstraints="NO" id="cS9-kI-Lil">
-                                <rect key="frame" x="12.666666666666657" y="216.33333333333334" width="364.66666666666674" height="50.000000000000028"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" spacing="195" translatesAutoresizingMaskIntoConstraints="NO" id="cS9-kI-Lil">
+                                <rect key="frame" x="12.666666666666657" y="216.33333333333334" width="364.66666666666669" height="50.000000000000028"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="9eW-7H-2ut">
                                         <rect key="frame" x="0.0" y="0.0" width="120" height="50"/>
@@ -513,8 +513,8 @@
                                     </button>
                                 </subviews>
                             </stackView>
-                            <stackView opaque="NO" contentMode="scaleToFill" spacing="180" translatesAutoresizingMaskIntoConstraints="NO" id="rdV-8j-07c">
-                                <rect key="frame" x="12.666666666666657" y="281.33333333333331" width="364.66666666666674" height="50"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" spacing="180" translatesAutoresizingMaskIntoConstraints="NO" id="rdV-8j-07c">
+                                <rect key="frame" x="12.666666666666657" y="281.33333333333331" width="364.66666666666669" height="50"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" spacing="195" translatesAutoresizingMaskIntoConstraints="NO" id="sfC-D4-5ZC">
                                         <rect key="frame" x="0.0" y="0.0" width="134.66666666666666" height="50"/>
@@ -620,9 +620,31 @@
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5si-Wj-fvS">
                                         <rect key="frame" x="0.0" y="0.0" width="390" height="1000"/>
+                                        <subviews>
+                                            <stackView opaque="NO" contentMode="scaleToFill" spacing="199" translatesAutoresizingMaskIntoConstraints="NO" id="fF9-gx-OZX">
+                                                <rect key="frame" x="15" y="20" width="360" height="20.333333333333329"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="나의 감정일기" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="puq-KU-iuj">
+                                                        <rect key="frame" x="0.0" y="0.0" width="116.66666666666667" height="20.333333333333332"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="총 3건" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZeW-Cx-bzj">
+                                                        <rect key="frame" x="315.66666666666669" y="0.0" width="44.333333333333314" height="20.333333333333332"/>
+                                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
+                                            </stackView>
+                                        </subviews>
                                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="1000" id="8wX-CM-HlI"/>
+                                            <constraint firstAttribute="trailing" secondItem="fF9-gx-OZX" secondAttribute="trailing" constant="15" id="R1H-zu-40p"/>
+                                            <constraint firstItem="fF9-gx-OZX" firstAttribute="top" secondItem="5si-Wj-fvS" secondAttribute="top" constant="20" id="esI-Rd-Grl"/>
+                                            <constraint firstItem="fF9-gx-OZX" firstAttribute="leading" secondItem="5si-Wj-fvS" secondAttribute="leading" constant="15" id="wtp-wy-SXu"/>
                                         </constraints>
                                     </view>
                                 </subviews>
@@ -684,7 +706,7 @@
                                                                 <nil key="highlightedColor"/>
                                                             </label>
                                                             <view contentMode="scaleToFill" horizontalCompressionResistancePriority="751" verticalCompressionResistancePriority="749" translatesAutoresizingMaskIntoConstraints="NO" id="8nO-yU-hn8">
-                                                                <rect key="frame" x="248.66666666666666" y="0.0" width="126.33333333333334" height="67"/>
+                                                                <rect key="frame" x="248.66666666666671" y="0.0" width="126.33333333333334" height="67"/>
                                                                 <color key="backgroundColor" systemColor="systemIndigoColor"/>
                                                             </view>
                                                         </subviews>
