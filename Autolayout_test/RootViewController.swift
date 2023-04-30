@@ -1,5 +1,5 @@
 //
-//  NavigationController.swift
+//  RootViewController.swift
 //  Autolayout_test
 //
 //  Created by 김은지 on 2023/04/30.
@@ -7,7 +7,7 @@
 
 import UIKit
 
-class NavigationController: UINavigationController {
+class RootViewController: UINavigationController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -28,14 +28,14 @@ class NavigationController: UINavigationController {
 
 }
 
-extension UIButton{
-    @IBInspectable var borderColor: UIColor? {
-        get {
-            return UIColor(cgColor: layer.borderColor!)
-        }
-        set {
-            layer.borderColor = newValue?.cgColor
-            layer.borderWidth = 1
-        }
-    }
-}
+//extension UIButton{
+//    @IBInspectable var borderColor: UIColor? {
+//        get {
+//            return UIColor(cgColor: layer.borderColor!)
+//        }
+//        set {
+//            layer.borderColor = newValue?.cgColor
+//            layer.borderWidth = 1
+//        }
+//    }
+//}
