@@ -654,7 +654,7 @@
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="오늘은 [재밌어요]라고 기록해주셨네요 긍정적인 감정은 긍정적인 결과로 돌아온답니다!" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="O27-Xg-7kw">
                                                         <rect key="frame" x="5" y="5" width="280" height="90"/>
-                                                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="18"/>
                                                         <nil key="textColor"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
@@ -746,18 +746,87 @@
                                                     </label>
                                                 </subviews>
                                             </stackView>
+                                            <stackView opaque="NO" contentMode="scaleToFill" alignment="top" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="p30-Th-d0j">
+                                                <rect key="frame" x="15" y="284" width="345" height="100"/>
+                                                <subviews>
+                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="zGa-Gq-3fd">
+                                                        <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                                                        <color key="backgroundColor" red="0.016804177310000001" green="0.19835099580000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="50" id="7sx-Jf-yKR"/>
+                                                            <constraint firstAttribute="width" constant="50" id="FeU-KJ-5pN"/>
+                                                        </constraints>
+                                                    </imageView>
+                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gZJ-p1-cvJ">
+                                                        <rect key="frame" x="60" y="0.0" width="285" height="100"/>
+                                                        <subviews>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="감정일기를 작성할 때마다 스스로를 이해하는데 도움 되는 질문을 드릴 거예요!" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="DDl-Rb-VYp">
+                                                                <rect key="frame" x="5" y="5" width="275" height="90"/>
+                                                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                                                <nil key="textColor"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                        </subviews>
+                                                        <color key="backgroundColor" systemColor="systemGray5Color"/>
+                                                        <constraints>
+                                                            <constraint firstItem="DDl-Rb-VYp" firstAttribute="top" secondItem="gZJ-p1-cvJ" secondAttribute="top" constant="5" id="AB5-LK-kwO"/>
+                                                            <constraint firstAttribute="height" constant="100" id="Evm-4E-FiY"/>
+                                                            <constraint firstAttribute="bottom" secondItem="DDl-Rb-VYp" secondAttribute="bottom" constant="5" id="NBi-hE-Ohs"/>
+                                                            <constraint firstItem="DDl-Rb-VYp" firstAttribute="leading" secondItem="gZJ-p1-cvJ" secondAttribute="leading" constant="5" id="hG9-mj-3xe"/>
+                                                            <constraint firstItem="DDl-Rb-VYp" firstAttribute="centerY" secondItem="gZJ-p1-cvJ" secondAttribute="centerY" id="zey-gY-FpE"/>
+                                                            <constraint firstItem="DDl-Rb-VYp" firstAttribute="centerX" secondItem="gZJ-p1-cvJ" secondAttribute="centerX" id="zwa-Rf-Hhw"/>
+                                                        </constraints>
+                                                    </view>
+                                                </subviews>
+                                            </stackView>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="s0d-rg-KBP">
+                                                <rect key="frame" x="0.0" y="404" width="390" height="30"/>
+                                                <subviews>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="155" translatesAutoresizingMaskIntoConstraints="NO" id="V54-Jv-A6d">
+                                                        <rect key="frame" x="0.0" y="-2" width="390" height="34.333333333333336"/>
+                                                        <subviews>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Q. 스스로를 칭찬해주세요." lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="G4L-gE-FzE">
+                                                                <rect key="frame" x="0.0" y="0.0" width="187.33333333333334" height="34.333333333333336"/>
+                                                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                                                <nil key="textColor"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                            <button opaque="NO" contentMode="scaleToFill" horizontalCompressionResistancePriority="751" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gxs-9f-gkz">
+                                                                <rect key="frame" x="342.33333333333331" y="0.0" width="47.666666666666686" height="34.333333333333336"/>
+                                                                <color key="tintColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                <state key="normal" title="Button"/>
+                                                                <buttonConfiguration key="configuration" style="plain">
+                                                                    <imageReference key="image" image="chevron.forward" catalog="system" symbolScale="small"/>
+                                                                </buttonConfiguration>
+                                                            </button>
+                                                        </subviews>
+                                                    </stackView>
+                                                </subviews>
+                                                <color key="backgroundColor" systemColor="systemGray5Color"/>
+                                                <constraints>
+                                                    <constraint firstItem="V54-Jv-A6d" firstAttribute="leading" secondItem="s0d-rg-KBP" secondAttribute="leading" id="MYO-uC-9xx"/>
+                                                    <constraint firstAttribute="trailing" secondItem="V54-Jv-A6d" secondAttribute="trailing" id="Vvz-IR-0y9"/>
+                                                    <constraint firstAttribute="height" constant="30" id="b05-UH-cyg"/>
+                                                    <constraint firstItem="V54-Jv-A6d" firstAttribute="centerY" secondItem="s0d-rg-KBP" secondAttribute="centerY" id="f43-jt-Xrr"/>
+                                                </constraints>
+                                            </view>
                                         </subviews>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <constraints>
                                             <constraint firstItem="Jzv-eB-uWo" firstAttribute="leading" secondItem="tMy-9Q-aHf" secondAttribute="trailing" constant="10" id="0ZQ-q0-xZ2"/>
                                             <constraint firstAttribute="height" constant="1000" id="8wX-CM-HlI"/>
                                             <constraint firstAttribute="trailing" secondItem="rbO-RK-zQm" secondAttribute="trailing" id="9SS-lC-M4g"/>
+                                            <constraint firstItem="s0d-rg-KBP" firstAttribute="leading" secondItem="5si-Wj-fvS" secondAttribute="leading" id="APH-Cx-Url"/>
                                             <constraint firstItem="oRG-MM-jMt" firstAttribute="trailing" secondItem="Jzv-eB-uWo" secondAttribute="trailing" id="Bfd-ag-LOe"/>
                                             <constraint firstItem="5oX-5Q-sPc" firstAttribute="top" secondItem="rbO-RK-zQm" secondAttribute="bottom" constant="20" id="OPe-cE-s3p"/>
+                                            <constraint firstItem="p30-Th-d0j" firstAttribute="top" secondItem="5oX-5Q-sPc" secondAttribute="bottom" constant="20" id="Qcp-Qg-Pgp"/>
                                             <constraint firstAttribute="trailing" secondItem="fF9-gx-OZX" secondAttribute="trailing" constant="15" id="R1H-zu-40p"/>
+                                            <constraint firstItem="p30-Th-d0j" firstAttribute="leading" secondItem="tMy-9Q-aHf" secondAttribute="leading" id="Xbg-g7-eOB"/>
                                             <constraint firstAttribute="trailing" secondItem="5oX-5Q-sPc" secondAttribute="trailing" constant="25" id="aA9-Co-uDI"/>
                                             <constraint firstAttribute="trailing" secondItem="Jzv-eB-uWo" secondAttribute="trailing" constant="25" id="axL-HV-WMH"/>
+                                            <constraint firstAttribute="trailing" secondItem="s0d-rg-KBP" secondAttribute="trailing" id="bim-Ki-yak"/>
                                             <constraint firstItem="Jzv-eB-uWo" firstAttribute="top" secondItem="fF9-gx-OZX" secondAttribute="bottom" constant="8" symbolic="YES" id="c4D-No-tMq"/>
+                                            <constraint firstItem="s0d-rg-KBP" firstAttribute="top" secondItem="p30-Th-d0j" secondAttribute="bottom" constant="20" id="eVr-f3-9tM"/>
                                             <constraint firstItem="fF9-gx-OZX" firstAttribute="top" secondItem="5si-Wj-fvS" secondAttribute="top" constant="20" id="esI-Rd-Grl"/>
                                             <constraint firstItem="tMy-9Q-aHf" firstAttribute="top" secondItem="puq-KU-iuj" secondAttribute="bottom" constant="8" symbolic="YES" id="fPh-ao-Ofz"/>
                                             <constraint firstItem="rbO-RK-zQm" firstAttribute="leading" secondItem="5si-Wj-fvS" secondAttribute="leading" id="flK-dc-HlO"/>
@@ -765,6 +834,7 @@
                                             <constraint firstItem="tMy-9Q-aHf" firstAttribute="leading" secondItem="puq-KU-iuj" secondAttribute="leading" id="rVD-t9-Epr"/>
                                             <constraint firstItem="oRG-MM-jMt" firstAttribute="top" secondItem="Jzv-eB-uWo" secondAttribute="bottom" constant="8" symbolic="YES" id="v16-kc-aRF"/>
                                             <constraint firstItem="fF9-gx-OZX" firstAttribute="leading" secondItem="5si-Wj-fvS" secondAttribute="leading" constant="15" id="wtp-wy-SXu"/>
+                                            <constraint firstItem="p30-Th-d0j" firstAttribute="trailing" secondItem="O27-Xg-7kw" secondAttribute="trailing" id="xqu-O9-iCd"/>
                                             <constraint firstItem="5oX-5Q-sPc" firstAttribute="leading" secondItem="5si-Wj-fvS" secondAttribute="leading" constant="25" id="y9N-Bf-ytj"/>
                                         </constraints>
                                     </view>
